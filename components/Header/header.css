@@ -5,25 +5,43 @@
 }
 
 @media (max-width: 768px) {
+    
     .navContainer {
         display: none;
     }
+    
     .logoContainer {
         flex: 1;
         display: flex;
         justify-content: space-between;
     } 
+    
     .logo {
         flex: 1;
         display: flex;
         justify-content: center;
+        z-index: 1000;
     }
+    
     .menu-icon {
         padding-left: 1rem;
     }
+
     .navContainer2{
+        right: 0px;
+        /* bottom: 0px; */
         position: absolute;
         height: 100vh;
+        width: 100%;
+        background-color: rgb(238, 233, 227);
+        display: flex;
+        flex-direction: column;
+        padding: 15rem 3rem;
+        gap: 2rem;
+        z-index: 2;
     }
-}
 
+    .hamburger {
+    z-index: 100000;}
+
+}

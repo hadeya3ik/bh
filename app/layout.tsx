@@ -5,10 +5,6 @@ import Navbar from "../components/Navbar/Navbar"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import CustomCursor from '../components/Cursor/CustomCursor';
-// import NextCustomCursor from '../components/Cursor2/NextCustomCursor';
-import Link from 'next/link'
-import style from '../typography/typography.module.css'
-import {sectionText} from "../typography/fonts"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,8 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"body"}>
-      < CustomCursor />
-      {/* < NextCustomCursor /> */}
+      <CustomCursor />
         <div className="navBar">
           <Navbar/>
         </div>

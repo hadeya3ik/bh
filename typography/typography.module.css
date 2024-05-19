@@ -19,3 +19,35 @@
     font-size: 0.5rem;
     color: black;
 }
+
+.mobileNavItem {
+    font-size: 2.5rem;
+    color: black
+}
+
+.heroText {
+    font-size: 4rem;
+    color: black
+}
+
+.button {
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: black;
+    padding: 0.75rem 3rem;
+    font-weight: 700;
+    background: none;
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    transition: color 1s ease;
+    transition: background 1s ease;
+}
+
+.paragraph {
+    letter-spacing: .1rem;
+}
