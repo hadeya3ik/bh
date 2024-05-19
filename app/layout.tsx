@@ -34,12 +34,6 @@ export default function RootLayout({
             <Header/>
           </div>
           <div className="content">
-          <li className={` ${sectionText.className} navContainer2`}>
-              <Link href='/' className={`${style.navItem} hover-target`}> Home </Link>
-              <Link href='/Contact' className={`${style.navItem} hover-target`}> Contact </Link>
-              <Link href='/Shop' className={`${style.navItem} hover-target`}> Shop </Link>
-              <Link href='/Menu' className={`${style.navItem} hover-target`}> Menu </Link>
-            </li>
             {children}
           </div>
           <div className="footer">

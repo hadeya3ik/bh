@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <div className='footerContainer'>
       <p className={`${sectionText.className} ${style.footerLink}`} >© 2023 BAKING HORIZON</p>
-      <div className="icons">
-        <a className={`hover-target`} href="https://www.instagram.com/bakinghorizon/?hl=en" target="_blank" rel="noopener noreferrer">
+      <div className={`hover-target icons`}>
+        <a href="https://www.instagram.com/bakinghorizon/?hl=en" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={18} color={"black"}/>
         </a>
-        <a className={`hover-target`} href="https://www.facebook.com/bakinghorizon/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/bakinghorizon/" target="_blank" rel="noopener noreferrer">
           <FaFacebook size={18} color={"black"}/>
         </a>
         

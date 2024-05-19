@@ -7,7 +7,7 @@ import style from '../../typography/typography.module.css'
 
 const Navbar = () => {
   return (
-     <li className={`navContainer ${sectionText.className}`}>
+    <li className={`navContainer hover-target ${sectionText.className}`}>
       <Link href='/' className={`${style.navItem} hover-target`}> Home </Link>
       <Link href='/Contact' className={`${style.navItem} hover-target`}> Contact </Link>
       <Link href='/Shop' className={`${style.navItem} hover-target`}> Shop </Link>

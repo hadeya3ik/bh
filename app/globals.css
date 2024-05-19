@@ -1,10 +1,11 @@
 body {
   background-color: rgb(248, 247, 241);
+  cursor: none;
 }
 
-/* .hover-target {
+.hover-target {
   cursor: none;
-} */
+}
 
 .body, .logoContainer, .footerContainer{
   display: flex;
