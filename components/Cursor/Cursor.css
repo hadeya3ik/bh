@@ -1,0 +1,22 @@
+.cursor {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.inner {
+    border: rgb(0, 0, 0) 0.2px solid;
+}
+  
+.cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+}
+  
+.inner.hover {
+    background: #f7f7f7;
+    mix-blend-mode: difference;
+}

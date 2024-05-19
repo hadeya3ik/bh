@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    } 
+}
+
+@media (max-width: 768px) {
+    .navContainer {
+        display: none;
+    }
+    .logoContainer {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    } 
+    .logo {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-icon {
+        padding-left: 1rem;
+    }
+    .navContainer2{
+        position: absolute;
+        height: 100vh;
+    }
+}
+

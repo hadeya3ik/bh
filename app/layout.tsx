@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Navbar from "../components/Navbar/Navbar"
+import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
+import CustomCursor from '../components/Cursor/CustomCursor';
+// import NextCustomCursor from '../components/Cursor2/NextCustomCursor';
+import Link from 'next/link'
+import style from '../typography/typography.module.css'
+import {sectionText} from "../typography/fonts"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +23,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={"body"}>
+      < CustomCursor />
+      {/* < NextCustomCursor /> */}
+        <div className="navBar">
+          <Navbar/>
+        </div>
+        <div className="page">
+          <div className="header">
+            <Header/>
+          </div>
+          <div className="content">
+          <li className={` ${sectionText.className} navContainer2`}>
+              <Link href='/' className={`${style.navItem} hover-target`}> Home </Link>
+              <Link href='/Contact' className={`${style.navItem} hover-target`}> Contact </Link>
+              <Link href='/Shop' className={`${style.navItem} hover-target`}> Shop </Link>
+              <Link href='/Menu' className={`${style.navItem} hover-target`}> Menu </Link>
+            </li>
+            {children}
+          </div>
+          <div className="footer">
+            <Footer/>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
