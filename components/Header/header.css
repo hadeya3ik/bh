@@ -4,7 +4,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    border: 3px solid red;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .red {
@@ -13,6 +13,8 @@
 
 .headerActive {
     background-color: #71634b;
+    overflow: hidden;
+
 }
 
 .burger {
@@ -47,4 +49,58 @@
 .burgerActive::before {
     transform: rotate(-45deg);
     top: 1px;
+}
+
+
+
+/* body  */
+
+.nav {
+    overflow: hidden;
+}
+
+.nav .wrapper {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.nav .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bodyy {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.bodyy a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bodyy p {
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    font-size: 32px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 1000px) {
+    .bodyy {
+        max-width: 1200px;
+        margin-top: 80px;
+    }
+
+    .bodyy p {
+        font-size: 5vw;
+        padding-right: 2vw;
+    }
 }

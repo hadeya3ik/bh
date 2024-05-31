@@ -11,7 +11,6 @@ export default function Index() {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        // <div className={`header ${isActive ? 'headerActive' : ''}`}>
         <div className={`header ${isActive ? 'headerActive' : ''}`}>
             <div className="bar">
                 <div onClick={() => setIsActive(!isActive)}>
