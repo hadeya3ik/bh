@@ -20,6 +20,10 @@ export const heroText = localfont({
   src : [{path : "../fonts/cheri.otf"}], variable: '--font-melodin'
 })
 
+export const titleText = localfont({
+  src : [{path : "../fonts/cheri.otf"}], variable: '--font-melodin'
+})
+
 export const paragraphText = Lato ({
   weight: '300',
   subsets: ['latin'],

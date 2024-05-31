@@ -1,7 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-color: rgb(248, 247, 241);
   cursor: none;
 }
+
+
+.navBar {
+  width: 74px; 
+}
+
+.navContainer {
+  position: fixed;
+  height: 100vh;
+  padding: 8rem 0rem;;
+}
+
+.navContainer a {
+  transform: rotate(-90deg);  
+}
+
+.navBar, .page, .navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 .hover-target {
   cursor: none;
@@ -28,29 +55,16 @@ body {
   border-right: 0.8px solid black;
 }
 
-.navContainer, .navBar, .page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .logoContainer {
   justify-content: center;
   align-items: center;
 }
 
-.navContainer, .page .content, .page{
+.page .content, .page{
   flex: 1; 
 }
 
-.navBar {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 
-.navBar a {
-  transform: rotate(-90deg);
-}
 
 /* reset */
 

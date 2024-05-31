@@ -13,6 +13,15 @@
     color: black;
 }
 
+.subText {
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: black;
+    font-weight: 600;
+}
+
+
 .footerLink {
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -27,6 +36,11 @@
 
 .heroText {
     font-size: 4rem;
+    color: black
+}
+
+.titleText {
+    font-size: 2rem;
     color: black
 }
 

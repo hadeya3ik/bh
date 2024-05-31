@@ -1,7 +1,19 @@
 .sectionContainer{
-    padding: 10rem;
+    padding: 8rem 4rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
     border-bottom: 0.8px solid black;
 }
+
+.faqSectionContainer {
+    padding: 8rem 4rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.SlidersectionContainer {
+    padding: 8rem 4rem;
+    padding-right: 0rem;
+}
+    
